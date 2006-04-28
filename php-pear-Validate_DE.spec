@@ -9,6 +9,7 @@ Summary(pl):	%{_pearname} - Klasa sprawdzaj±ca poprawno¶æ dla Niemiec
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
+Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,8 +17,8 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Validate_DE/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-Requires:	php-pear
 Requires:	php-common >= 3:4.1.0
+Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +30,7 @@ Package containes locale validation for DE such as:
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Pakiet do sprawdzania poprawno¶ci dla Niemiec:
+Pakiet do sprawdzania poprawno¶ci dla Niemiec danych takich jak:
 - kod pocztowy
 - kod banku
 
@@ -67,4 +68,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files tests
 %defattr(644,root,root,755)
-%{php_pear_dir}/tests/Validate_DE/tests/validate_DE.phpt
+%{php_pear_dir}/tests/Validate_DE
