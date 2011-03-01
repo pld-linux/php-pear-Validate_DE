@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Validation class for DE
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Niemiec
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
-Release:	1
+Release:	2
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
